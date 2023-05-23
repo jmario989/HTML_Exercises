@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrasci</title>
+</head>
+<body>
+    <form action="includes/prijava-korisnika.php" method="post" enctype="multipart/form-data" autocomplete="off" >
+        <fieldset><legend>Prijava na tečaj</legend>
+            <label for="ime-prezime">Ime i prezime:* </label><br />
+            <input type="text" name="ime-prezime" id="ime-prezime" autofocus required /><br/><br/>
+            <label for="mjesec">Mjesec i godina rođenja:* </label><br />
+            <input type="month" name="mjesec" id="mjesec" required min="2004-09" /><br/><br/>
+            <label for="spol">Spol:*</label><br />
+            <input type="text" name="spol" list="lista-spol" id="spol" required />
+            <datalist id="lista-spol">
+                <option value="Muško" />
+                <option value="Žensko" />
+            </datalist><br /><br />
+            <label for="dokumentacija">Dokumentacija: </label><br />
+            <input type="file" name="dokumentacija" id="dokumentacija" multiple /><br/><br/>
+            <label>Želim upisati: </label><br />
+            <input name="fe" type="checkbox" value="fe" id="fe" /><label for="fe">Front-End Developer</label><br />
+            <input name="be" type="checkbox" value="be" id="be" /><label for="be">Back-End Developer</label><br />
+            <input name="ci" type="checkbox" value="ci" id="ci" /><label for="ci">CISCO</label><br /><br />
+            <label for="e-mail">Vaša E-mail adresa:</label><br />
+            <input type="email" name="e-mail" id="e-mail" placeholder="simple@example.com" /><br /><br />
+            <label for="broj">Broj završenih razreda srednje škole:*</label><br />
+            <input type="number" name="broj" id="broj" min="0" max="4" value="4" required/><br /><br />
+            <label for="vrijeme">Vrijeme registracije:*</label><br />
+            <input type="time" id="vrijeme" name="vrijeme" required /><br /><br />
+            <input type="submit" value="Uredu" />
+        </fieldset>
+    </form> 
+</body>
+</html>

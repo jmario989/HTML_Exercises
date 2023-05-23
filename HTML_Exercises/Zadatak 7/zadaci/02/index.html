@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrasci</title>
+</head>
+<body>
+    <h1>Prijava za posao</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <p>
+            <label for="ime">Ime i prezime: *</label><br />
+            <input id="ime" type="text" name="ime" required placeholder="Vaše ime i prezime" />
+        </p>
+
+        <p>
+            <label for="e-adresa">E-mail adresa:</label><br />
+            <input id="e-adresa" type="email" name="e-adresa" placeholder="Upišite valjanu e-mail adresu" size="30" />
+        </p>
+
+        <p>
+            <label for="telefon">Kontakt broj telefona:*</label><br />
+            <input id="telefon" type="tel" name="telefon" required />
+        </p>
+
+        <p>
+            <label for="web">Web adresa:</label><br />
+            <input id="web" type="url" name="web" required />
+        </p>
+
+        <p>
+            <label for="datum">Datum rođenja:*</label><br />
+            <input id="datum" type="date" name="datum" required />
+
+        </p>
+
+        <p>
+            <label for="sprema">Stručna sprema: </label><br />
+            <select name="sprema" id="sprema">
+                <option value="1">NSS</option>
+                <option value="2">SSS</option>
+                <option value="3">VŠS</option>
+                <option value="4">VSS</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Koje jezike govorite?</label><br />
+            <label for="engleski">Engleski</label>
+            <input id="engleski" name="engleski" type="checkbox" value="engleski" />
+            <label for="talijanski">Talijanski</label>
+            <input id="talijanski" name="talijanski" type="checkbox" value="talijanski" />
+            <label for="njemacki">Njemački</label>
+            <input id="njemacki" name="njemacki" type="checkbox" value="njemacki" />
+            <label for="francuski">Francuski</label>
+            <input id="francuski" name="francuski" type="checkbox" value="francuski" />
+            <label for="spanjolski">Španjolski</label>
+            <input id="spanjolski" name="spanjolski" type="checkbox" value="spanjolski" />
+        </p>
+        <p>
+            <label>Da li ste do sada koristili usluge naše tvrtke?</label><br />
+            <label for="usluge-da">Da</label>
+            <input id="usluge-da" type="radio" name="usluge" value="yes" />
+            <label for="usluge-ne">Ne</label>
+            <input id="usluge-ne" type="radio" name="usluge" value="no" />
+        </p>
+
+        <p>
+            <label for="cv">Priložite životopis:*</label><br />
+            <input id="cv" name="cv" type="file" multiple required />
+        </p>
+
+        <p>
+            <label for="komentar">Dodatan komentar:</label><br />
+            <textarea name="komentar" id="komentar" rows="6" cols="24"></textarea>
+        </p>
+
+        <p>
+            <input name="reset-btn" type="reset" value="Poništi" />
+            <input name="submit-btn" type="submit" value="Prijavi se" />
+        </p>
+
+
+    </form>
+</body>
+</html>

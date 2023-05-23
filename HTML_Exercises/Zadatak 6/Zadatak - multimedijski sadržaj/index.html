@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="multimedijski sadržaj, HTML5, video, audio" />
+        <meta name="description" content="Objavljivanje multimedijskog sadržaja u HTML-u." />
+        <title>Multimedijski sadržaji u HTML-u</title>
+    </head>
+    <body>
+        <h1>Multimedijski sadržaji u HTML-u</h1>
+        <p>Na web stranicama uz i vrlo često nalaze se i multimedijski sadržaji.<br /> Pod pojmom multimedija uglavnom podrazumijevamo audio i video sadržaje.</p>
+        <p>HTML5 omogućava jednostavnu integraciju multimedijskih sadržaja na web stranice.</p>
+        <h2>Audio</h2>
+        <p>Za korištenje na webu audio datoteke moraju biti pripremljene u odgovarajućim formatima.<br /> Podržani formati su:</p>
+        <ul>
+            <li>mp3</li>
+            <li>ogg</li>
+            <li>wav</li>
+        </ul>
+        <!-- <audio controls>
+            <source src="audio/music.mp3" type="audio/mpeg" />
+            <source src="audio/music.ogg" type="audio/ogg" />
+            <source src="audio/music.wav" type="audio/wav" />
+        </audio> -->
+        <audio controls src="audio/music.mp3"></audio>
+        <br />
+        <em>Audio sadržaj</em>
+        <h2>Video</h2>
+        <p>Za korištenje na webu video datoteke moraju biti pripremljene u odgovarajućim formatima.<br /> Podržani formati su:</p>
+        <ul>
+            <li>mp4</li>
+            <li>ogg</li>
+            <li>webM</li>
+        </ul>
+        <!-- <video controls width="560" height="320">
+            <source src="video/movie.mp4" type="video/mp4" />
+            <source src="video/movie.ogv" type="video/ogg" />
+            <source src="video/movie.webm" type="video/webm" />
+        </video> -->
+        <video controls src="video/movie.mp4" width="560" height="320"></video>
+        <br />
+        <em>Video sadržaj</em>
+        <p>Također možemo objaviti video zapis na servisu kao što je Youtube, pa ga odande dohvatiti i ugraditi u naše web stranice:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=W6NZfCO5SIk,TlB_eWDSMt4,qz0aGYrrlhU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+        <em>Lista Youtube videa</em>
+    </body>
+</html>
